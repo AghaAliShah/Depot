@@ -1,0 +1,19 @@
+# Core: the official Supabase Python SDK (gives us Database + Storage + Functions)
+supabase>=2.15.0
+
+# Reads your secrets out of the .env file so they never live in the code
+python-dotenv>=1.0.1
+
+# Pretty tables/colours in the terminal app
+rich>=13.7.0
+
+# Optional UI (skip if you only want the terminal app)
+streamlit>=1.35.0
+
+# httpx comes in with supabase, but we call the Edge Function with it directly,
+# so we list it explicitly.
+httpx>=0.27.0
+
+# altair and pandas come in with streamlit, but the Overview tab's chart
+# uses altair directly, so it's listed explicitly too.
+altair>=5.0.0

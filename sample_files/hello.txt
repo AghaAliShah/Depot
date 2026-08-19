@@ -1,0 +1,7 @@
+Hello Supabase!
+
+This file exists so you can test the upload flow immediately:
+
+    python main.py files upload sample_files/hello.txt
+
+The Edge Function will accept it (.txt is on the allow-list, and it is tiny).

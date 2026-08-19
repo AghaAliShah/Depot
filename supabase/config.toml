@@ -1,0 +1,10 @@
+# Supabase CLI project config.
+# Only the bits this project actually needs are here.
+
+project_id = "supabase-crud-app"
+
+[functions.file-guard]
+# verify_jwt = true means: the caller MUST send an Authorization header with a
+# valid Supabase JWT. The anon key IS a JWT, so the Python app just sends that.
+# Set it to false only if you want a truly public, unauthenticated endpoint.
+verify_jwt = true
